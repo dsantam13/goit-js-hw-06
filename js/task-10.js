@@ -11,6 +11,7 @@ const boxes = document.querySelector("#boxes");
 function createBoxes(amount) {
   let width = 30;
   let height = 30;
+
   for (let i = 0; i < amount; i += 1) {
     const newBox = document.createElement("div");
     newBox.classList.add("box");
@@ -19,6 +20,7 @@ function createBoxes(amount) {
     newBox.style.height = `${height}px`;
     newBox.style.backgroundColor = getRandomHexColor();
 
+    numDiv += 1;
     width += 10;
     height += 10;
   }
