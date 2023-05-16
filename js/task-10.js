@@ -20,7 +20,6 @@ function createBoxes(amount) {
     newBox.style.height = `${height}px`;
     newBox.style.backgroundColor = getRandomHexColor();
 
-    numDiv += 1;
     width += 10;
     height += 10;
   }
